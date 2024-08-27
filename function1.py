@@ -1,20 +1,12 @@
-# function1.py
+#교집합 리턴하는 함수 
+def intersect(prelist, postlist):
+    retList = []
+    for x in prelist:
+        if x in postlist and x not in retList:
+            retList.append(x)
+    return retList 
 
-#1) 함수정의
-def setValue(newValue):
-    #지역변수 초기화
-    x = newValue
-    print("지역변수:",x)
 
-#2) 호출
-retValue = setValue(5)
+#호출
+print( intersect("HAM", "SPAM") )
 
-print(retValue)
-
-# 함수정의
-
-def swap(x,y):
-    return y,x
-
-retValue=swap(3,7)
-print(retValue)
