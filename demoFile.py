@@ -14,7 +14,7 @@ result = f.read()
 
 
 #print(result)
-print(f.readline())
+print(result)
 f.close()
 
 
